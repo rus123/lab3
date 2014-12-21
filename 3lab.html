@@ -1,0 +1,27 @@
+<html> 
+<head> 
+<title> Найти гипотенузу по двум катетам в прямоугольном треугольнике </title> 
+<script type="text/javascript">
+
+function det() { 
+var a=(document.getElementById("a11").value); 
+var b=(document.getElementById("a22").value);
+document.getElementById("res").value=Math.sqrt((a*a)+(b*b)); }
+</script> 
+</head> 
+
+<body bgcolor="red"> 
+<form name="forma1"> 
+<p> Введите 1 катет: </p> <input type="text" name="a11" id="a11" value="" size="30"> 
+<br>
+<br>
+<p> Введите 2 катет: </p> <input type="text" name="a22" id="a22" value="" size="30"> 
+<br>
+<br>
+<p> Гипотенуза равна:</p> <input type="button" name="button" value="Вычислить" onClick="det()"> 
+<br>
+<br>
+<input type="text" name="res" id="res" size="30"> </br> </br> 
+</form> 
+</body> 
+</html>
